@@ -1,0 +1,36 @@
+{
+    "name": "sakiot/laravel-sqlsrv-err-avoid",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SqlsrvErrAvoid\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SqlsrvErrAvoid\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SqlsrvErrAvoid\\SqlsrvErrAvoidServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "SakiTakamachi",
+            "email": "saki@sakiot.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "laravel/framework": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "orchestra/testbench": "^8.7"
+    }
+}
