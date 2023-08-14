@@ -2,7 +2,7 @@
 
 namespace SqlsrvErrAvoid;
 
-use Illuminate\Database\Connectors\SqlServerConnector;
+use Illuminate\Database\Connectors\ConnectionFactory;
 use Illuminate\Support\ServiceProvider;
 
 class SqlsrvErrAvoidServiceProvider extends ServiceProvider
@@ -15,8 +15,8 @@ class SqlsrvErrAvoidServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->bind(
-            SqlServerConnector::class,
-            SqlServerErrAvoidConnector::class,
+            ConnectionFactory::class,
+            SqlServerErrAvoidConnectionFactory::class,
         );
     }
 
