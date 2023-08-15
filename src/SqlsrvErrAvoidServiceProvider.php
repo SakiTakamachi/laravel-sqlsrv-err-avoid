@@ -15,7 +15,7 @@ class SqlsrvErrAvoidServiceProvider extends ServiceProvider
     {
         $this->app->bind(
             'db.connector.sqlsrv',
-            SqlServerErrAvoidConnectionFactory::class,
+            SqlServerErrAvoidConnector::class,
         );
     }
 
