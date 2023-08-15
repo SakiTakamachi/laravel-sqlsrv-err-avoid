@@ -6,3 +6,7 @@ I will remove it after about six months when the new pdo_sqlsrv driver is releas
 
 Check here for driver release status.
 https://github.com/microsoft/msphpsql
+
+```
+composer require sakiot/laravel-sqlsrv-err-avoid
+```
